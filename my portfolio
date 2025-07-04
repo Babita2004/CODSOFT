@@ -14,7 +14,7 @@
     }
 
     header {
-      background-color: #333;
+      background:linear-gradient(#0066cc,#d10e9d);
       color: white;
       padding: 2rem 0;
       text-align: center;
@@ -92,8 +92,8 @@
   <section class="projects">
     <h2>Projects</h2>
         <h3>Portfolio Website</h3>
-        <p><li>A responsive portfolio built with HTML, CSS, and JavaScript.</li></p>
-        <img src="project1.jpg" alt="Project Screenshot">
+        <p><li>A responsive portfolio built with HTML, CSS. An excellent way to showcase your skills, projects, and personality in a visually appealing and professional manne </li></p>
+        <img src="C:\Users\hp\OneDrive\Pictures\projectSS.png" alt="Project Screenshot">
      
       
    
@@ -114,7 +114,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy;2025 babita Gagnani. All rights reserved.</p>
+    <p>&copy;2025 Babita Gagnani. All rights reserved.</p>
   </footer>
 
 </body>
