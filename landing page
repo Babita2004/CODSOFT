@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just For You</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f4;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #ff6f91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration:underline;
+        }
+
+       
+        .main {
+            background-image: url("https://ts2.mm.bing.net/th?id=OIP.MzBI64z9yCfIgNfZiF4KngHaE9&pid=15.1");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+            
+        }
+
+        .main h2 {
+            color: rgb(144, 152, 69);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .main p {
+            color: #ff6f91;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .main a {
+            background-color: rgb(242, 230, 128);
+            color: #ff6f91;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .main a:hover {
+            background-color: #ffe1e9;
+        }
+
+
+        /* FEATURES */
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .feature-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+            color: #ff6f91;
+        }
+
+        .feature-box p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color:#555;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        } 
+
+        
+         @media (max-width: 500px) {
+            .main h2 {
+                font-size: 2rem;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-box {
+                width: 90%;
+            }
+        }
+        button{
+            border-radius: 50px;
+            background-color: #ff6f91;
+        }
+    
+        
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Just for You</h1>
+        <nav>
+            <a href="" >Home</a>
+            <a href="" >Shop</a>
+            <a href="">Events</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    
+    <section class="main">
+        <h2>Beautiful Bouquets Just for You</h2>
+        <p>Fresh flowers delivered with love and care.</p>
+       <button onclick="submitButton()" id="b1">Order Now</button> 
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-box">
+            <h3> Seasonal Picks</h3>
+            <p>Our top flower collections for spring, summer, and beyond.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Weddings</h3>
+            <p>Elegant floral decor for weddings and special occasions.</p>
+        </div>
+        <div class="feature-box">
+            <h3> Same-Day Delivery</h3>
+            <p>Fast delivery available in your area with no extra charge.</p>
+        </div>
+         <div class="feature-box">
+            <h3>Our Happy Customer</h3>
+            <p>Our Cheer Leaders.Today What We are Just Because of You...</p>
+            <button onclick="showCustomer()"id=s1>Show</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Bloom & Bliss | Made with 💕 in India
+    </footer>
+
+</body>
+<script>
+    function submitButton(){
+        document.getElementById("b1").innerHTML="";
+        alert("Thank you For Connect With Us!!! ")
+        return true;
+    }
+    function showCustomer(){
+        document.getElementById("s1").innerHTML="Best flower shop in town!They helped me pick the bouquet for my mom birthday and even included a handwritten note.So thoughtfu!";
+        }
+    
+</script>
+
+</html>
