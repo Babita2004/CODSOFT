@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Calculator</title>
   <style>
    
     body {
       width: 25vw;
-      border-radius: 20px;
-      border: black solid 3px;
+      height: 20vh;
       text-align: center;
-      margin-top: 20vh;
       font-family: Arial;
-      margin-left: 40vw;
+     
     }
+     
     input {
       border: black  solid 3px;
       width: 200px;
@@ -24,18 +21,29 @@
     }
     button {
       border: black solid 2px;
+      background-color: white;
       width: 50px;
       height: 50px;
       font-size: 20px;
       margin: 5px;
       flex-direction: row;
+  
+    }
+    div{
       background-color: gray;
+      border-radius: 20px;
+      border:black solid 3px;
+      width:25vw;
+      margin-top: 20vh;
+      margin-left: 35vw;
+      
     }
   
   </style>
 </head>
 <body>
-    <h2 style=" background-color:gray;">Calculator</h2>
+ <div>
+    <h2 style=color:aliceblue>Calculator</h2>
   <input type="text" id="result">
 
   <br>
@@ -62,6 +70,7 @@
   <button onclick="clearResult()">C</button>
   <button onclick="calculate()">=</button>
   <button onclick="press('/')">/</button>
+  </div>
 
   <script>
     function press(value) {
